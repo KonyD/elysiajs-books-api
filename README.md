@@ -1,15 +1,46 @@
-# Elysia with Bun runtime
+# ElysiaJs Books API
 
-## Getting Started
-To get started with this template, simply paste this command into your terminal:
+**To Get Books:**
 ```bash
-bun create elysia ./elysia-example
+GET /books
 ```
 
-## Development
-To start the development server run:
+**To Add A Book:**
 ```bash
-bun run dev
+POST /books
+```
+example value:
+```json
+{
+  "name": "string",
+  "author": "string"
+}
 ```
 
-Open http://localhost:3000/ with your browser to see the result.
+**To Update A Book:**
+```bash
+PUT /books
+```
+example value:
+```json
+{
+  "id": 0,
+  "name": "string",
+  "author": "string"
+}
+```
+
+**To Get A Book By Id:**
+```bash
+GET /books/:id
+```
+
+**To Delete A Book:**
+```bash
+DELETE /books/:id
+```
+
+**To Sign In:**
+```bash
+POST /sign/:name
+```
